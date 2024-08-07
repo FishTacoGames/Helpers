@@ -7,7 +7,7 @@ public class TerrainTreeConverter : MonoBehaviour
     private Terrain terrain;
     [ContextMenu("Convert All Trees To Object")]
     public void ConvertAllTreesToObject()
-    {
+    {// Editor ONLY
         foreach (TreeInstance tree in terrain.terrainData.treeInstances)
         {
             GameObject gameObject = PrefabUtility.InstantiatePrefab(terrain.terrainData.treePrototypes[tree.prototypeIndex].prefab) as GameObject;
