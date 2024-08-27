@@ -5,7 +5,7 @@ public class SceneCleaner : MonoBehaviour
 {
     List<GameObject> inactiveObjects;
     // removes all inactive objects in the scene
-    [ExecuteInEditMode]
+    //[ExecuteInEditMode]
     [ContextMenu("Remove Inactive Objects")]
     void RemoveInactiveObjects()
     {
