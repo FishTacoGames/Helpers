@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using UnityEngine;
 /// <summary>
 /// Casts rays in a grid pattern in front of the player. 
