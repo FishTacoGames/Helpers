@@ -13,7 +13,7 @@ public class SDFBaker : MonoBehaviour
   {
     RuntimeBaker = new MeshToSDFBaker(new Vector3(2,2,2), new Vector3(0,0,0),64, sdfInput);
     RuntimeBaker.BakeSDF();
-    var size = RuntimeBaker.GetActualBoxSize() / 2f;
+   // var size = RuntimeBaker.GetActualBoxSize() / 2f; // optional way to get the bounding box size
     sdfOutput.SetTexture("SDF", RuntimeBaker.SdfTexture);
     sdfOutput.SetVector3("Size", sdfInput.bounds.size);
     sdfOutput.SetVector3("Position", TestMesh.transform.position);
