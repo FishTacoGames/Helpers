@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Animations;
-
+// places object duplicates in a row on selected axis' with spacing.
 [ExecuteInEditMode]
 public class ToArray : MonoBehaviour
 {
